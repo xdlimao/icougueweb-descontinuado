@@ -1,0 +1,85 @@
+
+.bg { 
+	background-color:rgba(255, 255, 255, 1);
+}
+.barsup { 
+	transform: rotate(90deg);
+	background-color:rgba(240.12499898672104, 66.03436142206192, 66.03436142206192, 1);
+	width:100px;
+	height:1000px;
+	position:absolute;
+	left: 450px;
+	top:-470px; 
+}
+.til { 
+	color:rgba(255, 255, 255, 1);
+	width:280px;
+	height:0px;
+	position:absolute;
+	left:280px;
+	top:15px;
+	font-family:Inter;
+	text-align:left;
+	font-size:32px;
+	letter-spacing:0;
+	line-height:px;
+}
+.bardir { 
+	transform: rotate(180deg);
+	background-color:rgba(240.12499898672104, 66.03436142206192, 66.03436142206192, 1);
+	width:65px;
+	height:950px;
+	position:fixed;
+	left:1815px;
+	top:0px;
+}
+.formi{
+	color:rgba(0, 0, 0, 1);
+	width:280px;
+	height:0px;
+	position:absolute;
+	left:200px;
+	top:210px;
+	font-family:Inter;
+	text-align:left;
+	font-size:32px;
+	letter-spacing:0;
+	line-height:px;
+}
+#boxbanner{
+	background: rgba(217,217,217,1);
+	width: 1296px;
+	height: 187.2px;
+  }
+.bistequinha { 
+	width:360px;
+	height:174px;
+	position:absolute;
+	left:1320px;
+	top:750px;
+	background-image:url(images/1661966499544_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.barinf { 
+	transform: rotate(90deg);
+	background-color:rgba(240.12499898672104, 66.03436142206192, 66.03436142206192, 1);
+	width:85px;
+	height:950px;
+	position:fixed;
+	left:432px;
+	top:443px;
+}
+.volt { 
+	color:rgba(240.12499898672104, 66.03436142206192, 66.03436142206192, 1);
+	width:352px;
+	height:55px;
+	position:absolute;
+	left:109px;
+	top:149px;
+	font-family:Inter;
+	text-align:left;
+	font-size:32px;
+	letter-spacing:0;
+	line-height:px;
+}

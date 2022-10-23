@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+          <head>
+            <meta charset="utf-8">
+          
+            <title>Trocar Foto - iÇougue</title>
+            <meta name="description" content="Figma htmlGenerator">
+            <meta name="author" content="htmlGenerator">
+            
+            <!--FONTE DOS TEXTOS-->
+            <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="styles.css">
+            
+        <script>
+            var a
+        </script>
+          
+          </head>
+          
+          <body>    
+            <div class="bg">
+                <div  class="barsup"></div>
+                <span  class="til">CONFIGURAÇÕES</span>
+                <div class="formi">
+                    <form th:action="@{/simg/image}" method="get">
+                        <label> Envie seu banner</label>
+                        <div id="boxbanner"></div>
+                        <!--  <input type="file" accept="image/png, image/jpeg, image/jpg">--> 
+                   		<input type="text" name="texto" id="texto" required>
+                   		<input type="submit" value="Salvar" >
+                    </form>            
+                </div>
+                <div  class="bardir"></div>
+                <div  class="bistequinha"></div>
+                <div  class="barinf"></div>
+                <span  class="volt"><<< Voltar</span>
+            </div>
+          </body>
+</html>
