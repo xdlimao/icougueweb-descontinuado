@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ICougueApplication<iCougue>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.klb.icougue.ICougueApplication",
+            "projectName": "iCougue",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
