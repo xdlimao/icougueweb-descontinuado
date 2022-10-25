@@ -36,7 +36,7 @@ public class FotoController {
 		
 		@PostMapping
 		@ResponseStatus(HttpStatus.CREATED)
-		public Foto salvar(@RequestBody Foto foto) {
+		public Foto salvar(Foto foto) {
 			return fotoService.salvar(foto);
 		}
 		
