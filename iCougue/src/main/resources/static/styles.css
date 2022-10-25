@@ -28,9 +28,9 @@
 	transform: rotate(180deg);
 	background-color:rgba(240.12499898672104, 66.03436142206192, 66.03436142206192, 1);
 	width:65px;
-	height:950px;
+	height:970px;
 	position:fixed;
-	left:1815px;
+	left:1855px;
 	top:0px;
 }
 .formi{
@@ -49,7 +49,9 @@
 #boxbanner{
 	background: rgba(217,217,217,1);
 	width: 1296px;
-	height: 187.2px;
+	height: 187px;
+	border-style: groove;
+	border-color: rgba(240.12499898672104, 66.03436142206192, 66.03436142206192, 1);
   }
 .bistequinha { 
 	width:360px;
@@ -65,7 +67,7 @@
 	transform: rotate(90deg);
 	background-color:rgba(240.12499898672104, 66.03436142206192, 66.03436142206192, 1);
 	width:85px;
-	height:950px;
+	height:970px;
 	position:fixed;
 	left:432px;
 	top:443px;
