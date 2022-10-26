@@ -13,7 +13,14 @@
             <link rel="stylesheet" href="styles.css">
             
         <script>
-            var a
+            var json_url = "http://localhost:8080/simg"
+            fetch(json_url)
+            	.then(results => results.json())
+            	.then(data => {
+            	console.log(data)
+            	document.querySelector("#debug").innerText = data       
+            	})
+            	
         </script>
           
           </head>
@@ -27,13 +34,16 @@
                         <br>
                         <label> Envie seu banner</label>
                         <div id="boxbanner">
-                        <img src="../images/atumalacafotosxd.jpg" alt="Banner" width = "1296px" height="187">
+                        <!--<img src="" alt="Banner" width = "1296px" height="187"> -->
+                      
                         </div>
                         <br>
-                        <!--  <input type="file" accept="image/png, image/jpeg, image/jpg">--> 
-                   		<input type="text" name="texto" id="texto" required>
+                        <!--<input type="file" name="file">-->
+                   		<input type="text" name="texto" id="texto">
                    		<input type="submit" value="Salvar" >
-                    </form>            
+                    </form>
+                    <form action="/simg" method="post">
+               	<div id="debug"></div>
                 </div>
                 <div  class="bardir"></div>
                 <div  class="bistequinha"></div>

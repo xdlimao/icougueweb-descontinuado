@@ -30,4 +30,6 @@ public class FotoService {
 		public void removerPorId(Long id) {
 			fotoRepository.deleteById(id);
 		}
+
+		
 }

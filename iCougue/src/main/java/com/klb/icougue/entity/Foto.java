@@ -16,7 +16,16 @@ public class Foto {
 	@Column(name = "texto", nullable = true)
 	private String texto;
 	
-	public Long getId() {
+	@Column(name = "arq", nullable = true)
+	private String arq;
+	
+	public String getArq() {
+        return arq;
+    }
+    public void setArq(String arq) {
+        this.arq = arq;
+    }
+    public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
