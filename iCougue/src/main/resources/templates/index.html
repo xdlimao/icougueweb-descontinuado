@@ -17,8 +17,8 @@
             fetch(json_url)
             	.then(results => results.json())
             	.then(data => {
-            	console.log(data)
-            	document.querySelector("#debug").innerText = data       
+            	console.log(data[0].texto)
+            	document.querySelector("#debug").innerText = data[0].texto       
             	})
             	
         </script>
@@ -34,7 +34,7 @@
                         <br>
                         <label> Envie seu banner</label>
                         <div id="boxbanner">
-                        <!--<img src="" alt="Banner" width = "1296px" height="187"> -->
+                        <img src="" alt="Banner" width = "1296px" height="187">
                       
                         </div>
                         <br>

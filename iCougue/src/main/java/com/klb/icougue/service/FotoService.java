@@ -16,7 +16,7 @@ public class FotoService {
 	private FotoRepository fotoRepository;
 	
 		public Foto salvar(Foto foto) {
-			return fotoRepository.save(foto);
+		    return fotoRepository.save(foto);
 		}
 	
 		public List<Foto> listaFoto(){
