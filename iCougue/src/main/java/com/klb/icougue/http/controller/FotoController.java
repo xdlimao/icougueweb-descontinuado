@@ -86,7 +86,7 @@ public class FotoController {
 					.orElseThrow();
 		}
 		
-		@DeleteMapping("/{id}")
+		@DeleteMapping("/del/{id}")
 		@ResponseStatus(HttpStatus.NO_CONTENT)
 		public void removerFoto(@PathVariable("id") Long id) {
 			fotoService.buscarPorId(id)
