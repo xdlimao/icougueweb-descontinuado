@@ -12,16 +12,7 @@
 
             <link rel="stylesheet" href="styles.css">
             
-        <script>
-            var json_url = "http://localhost:8080/simg"
-            fetch(json_url)
-            	.then(results => results.json())
-            	.then(data => {
-            	console.log(data[0].texto)
-            	document.querySelector("#debug").innerText = data[0].texto       
-            	})
-            	
-        </script>
+        
           
           </head>
           
@@ -35,16 +26,18 @@
                         <label> Envie seu banner</label>
                         <div id="boxbanner">
                         <img src="../images/atumalacafotosxd.jpg" alt="Banner" width = "1296px" height="187">
-                        <div id="debug">
-                          
-                        </div>
+                          <div id="debug">
+                          a
+                          </div>
                         </div>
                         <br>
                         <!--<input type="file" name="file">-->
                    		<input type="text" name="texto" id="texto">
                    		<input type="submit" value="Salvar" >
                     </form>
-                   
+                   <p>
+                    <input type="button" value="Deletar" id="delbtn">
+                    </p>
                	<div id="debug"></div>
                 </div>
                 <div  class="bardir"></div>
@@ -53,4 +46,28 @@
                 <span  class="volt"> ← Voltar </span>
             </div>
           </body>
-</html>
+
+          <script>
+            var json_url = "http://localhost:8080/simg"
+            
+            var delbtn = document.getElementById("delbtn")
+            delbtn.addEventListener("click", deleteData)
+
+            //GET Automático
+            fetch(json_url)
+            	.then(results => results.json())
+            	.then(data => {
+            	console.log(data[0].texto)
+            	document.querySelector("#debug").innerText = data[0].texto
+            })
+
+            function deleteData() {
+            return fetch(json_url+"/del/1", {
+            method: 'delete'
+            })
+            .then(response => response.json());
+          } 
+           
+        </script>
+
+          </html>
