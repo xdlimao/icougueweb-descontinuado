@@ -96,7 +96,7 @@ public class FotoController {
 					}).orElseThrow();
 		}
 		
-		@PutMapping("/{id}")
+		@PutMapping("/put/{id}")
 		@ResponseStatus(HttpStatus.NO_CONTENT)
 		public void atualizarFoto(@PathVariable("id") Long id, @RequestBody Foto foto){
 			fotoService.buscarPorId(id)
